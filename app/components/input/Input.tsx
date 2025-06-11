@@ -1,4 +1,4 @@
-
+import styles from "./Input.module.scss"
 interface InputProps{
     type?:string,
     placeholder?:string,
@@ -12,8 +12,8 @@ const Input: React.FC<InputProps> = ({
     onChange
 }) =>{
     return (
-        <div className="w-full">
-            <input className="w-full py-1 px-2 border border-gray-300 focus:outline-none rounded-md" type={type}
+        <div className={styles.container}>
+            <input className={styles.input} type={type}
             placeholder={placeholder}
             value={value}
             onChange={onChange}

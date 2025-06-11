@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+
+  .card {
+    padding: 2rem;
+    width: 66.6667%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 640px) {
+      width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      width: 41.6667%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 33.3333%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      width: 100%;
+    }
+  }
+}
